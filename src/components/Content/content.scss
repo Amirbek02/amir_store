@@ -1,0 +1,39 @@
+.content {
+  padding: 45px;
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+    .input {
+      display: flex;
+      align-items: center;
+      border: 1px solid #F3F3F3;
+      border-radius: 10px;
+      padding: 3px 20px 3px 18px;
+      position: relative;
+
+      .clear {
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: 14px;
+        right: 15px;
+      }
+    }
+    input {
+      margin-left: 14px;
+      border: 0;
+      padding: 13px;
+      outline: none; border: none
+    }
+  }
+
+  .mir {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+}

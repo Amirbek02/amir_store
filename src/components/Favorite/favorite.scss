@@ -1,0 +1,13 @@
+.favorites {
+  height: 660px;
+  h1 {
+      padding: 40px;
+  }
+
+  .mirs {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 600px;
+    // padding: 30px;
+  }
+}

@@ -1,0 +1,43 @@
+.orders  {
+  min-height: 660px;
+  h1 {
+      padding: 40px;
+  }
+
+}
+
+.mirs {
+  display: flex;
+  flex-wrap: wrap;
+  // padding-left: 40px;
+  min-height: 600px;
+  padding: 30px;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+
+.center {
+  width: 290px;
+  text-align: center;
+  margin: 0 auto;
+
+
+  h3 {
+    margin: 14px 0 11px 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  p {
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.4;
+  }
+}

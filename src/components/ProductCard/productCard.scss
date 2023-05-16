@@ -1,0 +1,66 @@
+.card {
+  background: #FFFFFF;
+  border: 1px solid #F3F3F3;
+  border-radius: 40px;
+  height: 280px;
+  width: 210px;
+  padding: 20px;
+  margin: 0 20px 20px 0;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 14px 35px rgba(0, 0 , 0, 0.08);
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+
+  .heartBtn {
+    border: 0;
+    background-color: #fff;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  &__img {
+
+    margin: 0 0 14px;
+    width: 100%;
+    height: 135px;
+  }
+
+  &__text {
+    max-width: 150px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+    margin-bottom: 14px;
+    color: #000000;
+  }
+
+  .basket {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__cost {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 11px;
+      line-height: 13px;
+      text-transform: uppercase;
+      color: #BDBDBD;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    
+  }
+}

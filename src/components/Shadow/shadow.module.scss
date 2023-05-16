@@ -1,0 +1,165 @@
+.shadow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0 , 0, 0.5);
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+  overflow-y: none;
+}
+
+.shadowVisible {
+  visibility: visible;
+  opacity: 1;
+  .block {
+    transform: translateX(0);
+  }
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 420px;
+  height: 100%;
+  right: 0;
+  background: #FFFFFF;
+  padding: 30px;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  transition:  transform 0.3s ease-in-out;
+
+  &__basket {
+    margin: 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .removeBtn {
+      cursor: pointer;
+    }
+  }
+
+  .item {
+    overflow: auto;
+    flex: 1;
+    margin-bottom: 15px;
+  }
+  .cartItem {
+    
+    
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #F3F3F3;
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    .cartItemImg {
+      height: 70px;
+      width: 70px;
+      background-size: contain;
+      background-position: 0 -3px;
+      background-repeat: no-repeat;
+      margin-right: 20px;
+
+    }
+
+    .mainFoto {
+      height: 70px;
+      width: 70px;
+      margin-right: 20px;
+    }
+
+    .removeBtn {
+      cursor: pointer;
+    }
+
+    div {
+      margin-right: 5px;
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+    .removeBtn {
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+  }
+
+  .cartItemBlock {
+
+    ul {
+      display: block;
+      margin-bottom: 20px;
+
+      li {
+        display: flex;
+        align-items: flex-end;
+        span {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+        }
+
+        div {
+          flex: 1;
+          height: 1px;
+          border: 1px dashed #DFDFDF;
+          position: relative;
+          top: -4px;
+          left: 0;
+          margin: 0 7px;
+        }
+      }
+
+    }
+    .greenBtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:disabled {
+        background-color: #bebebe;
+        cursor: default;
+      }
+
+      &:hover {
+        img {
+          transform: translateX(5px);
+        }
+      }
+      
+      img {
+        position: relative;
+        right: -50px;
+        transition: transform 0.15s ease-in-out;
+      }
+    }
+  }
+
+  .box {
+    text-align: center;
+    margin: 200px 0 0 0;
+
+    h2 {
+      margin: 15px 0;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+
+  }
+}
